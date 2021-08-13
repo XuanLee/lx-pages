@@ -1,0 +1,42 @@
+{
+  "name": "lx-pages",
+  "version": "0.1.0",
+  "description": "static web app workflow",
+  "keywords": [
+    "lx-pages",
+    "zce"
+  ],
+  "repository": " /lx-pages",
+  "license": "MIT",
+  "author": "李徐安 <584036617@qq.com> (https://www.4399.com)",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "lint": "standard --fix",
+    "test": "jest --coverage",
+    "prepare": "npm run lint && npm run test"
+  },
+  "renovate": {
+    "extends": [
+      "zce"
+    ]
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "27.0.6",
+    "standard": "16.0.3"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
+}
