@@ -11,7 +11,8 @@
   "author": "李徐安 <584036617@qq.com> (https://www.4399.com)",
   "main": "lib/index.js",
   "files": [
-    "lib"
+    "lib",
+    "bin"
   ],
   "scripts": {
     "lint": "standard --fix",
