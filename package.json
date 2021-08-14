@@ -1,6 +1,6 @@
 {
   "name": "lx-pages",
-  "version": "0.1.0",
+  "version": "0.2.3",
   "description": "static web app workflow",
   "keywords": [
     "lx-pages",
@@ -16,7 +16,7 @@
   ],
   "scripts": {
     "lint": "standard --fix",
-    "test": "jest --coverage",
+    "test": "",
     "prepare": "npm run lint && npm run test"
   },
   "bin": "bin/lx-pages.js",
