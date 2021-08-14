@@ -14,10 +14,10 @@
 ## Installation
 
 ```shell
-$ npm install lx-pages
+$ npm install lx-pages --dev
 
 # or yarn
-$ yarn add lx-pages
+$ yarn add lx-pages --dev
 ```
 
 ## Usage
