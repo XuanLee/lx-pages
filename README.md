@@ -10,7 +10,9 @@
 [![Code Style][style-img]][style-url]
 
 > 一款轻量级基于Gulp的构建工具
+
 > 快速实现将开发阶段中代码自动转换为生产环境代码
+
 > 支持转换swig,sass,js,image,font
 
 ## Installation
@@ -43,10 +45,10 @@ module.exports = {
 }
 ```
 
-##开发阶段运行
+## 开发阶段运行
 >lx-pages develop 
 
-##生产阶段运行
+## 生产阶段运行
 >lx-pages build
 
 ## License
