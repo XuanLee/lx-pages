@@ -9,80 +9,48 @@
 [![devDependency Status][devdependency-img]][devdependency-url]
 [![Code Style][style-img]][style-url]
 
-> static web app workflow
+> 一款轻量级基于Gulp的构建工具
+> 快速实现将开发阶段中代码自动转换为生产环境代码
+> 支持转换swig,sass,js,image,font
 
 ## Installation
 
-```shell
-$ npm install lx-pages --dev
+```npm
+$ npm install lx-pages --save-dev
 
 # or yarn
 $ yarn add lx-pages --dev
 ```
 
-## Usage
+## 在项目根目录创建pages-config.js
 
-<!-- TODO: Introduction of Usage -->
-
-```javascript
-const lxPages = require('lx-pages')
-const result = lxPages('w')
-// result => 'w@zce.me'
+```
+module.exports = {
+  //默认配置  
+  build : {
+    src : 'src', //项目根路径                       
+    dist : 'dist', //输出路径
+    temp : '.temp', //临时路径,可不做修改
+    public : 'public', //静态资源，打包后复制在dist目录
+    paths : { //各个文件存放路径-结合自己项目修改
+      styles : 'assets/styles/*.scss',
+      scripts : 'assets/scripts/*.js',
+      pages : '*.html',
+      images : 'assets/images/**',
+      fonts : 'assets/fonts/**'
+    }
+  }
+}
 ```
 
-## API
+##开发阶段运行
+>lx-pages develop 
 
-<!-- TODO: Introduction of API -->
-
-### lxPages(input, options?)
-
-#### input
-
-- Type: `string`
-- Details: name string
-
-#### options
-
-##### host
-
-- Type: `string`
-- Details: host string
-- Default: `'zce.me'`
-
-## Related
-
-- [zce/caz](https://github.com/zce/caz) - A simple yet powerful template-based Scaffolding tools.
-
-## Contributing
-
-1. **Fork** it on GitHub!
-2. **Clone** the fork to your own machine.
-3. **Checkout** your feature branch: `git checkout -b my-awesome-feature`
-4. **Commit** your changes to your own branch: `git commit -am 'Add some feature'`
-5. **Push** your work back up to your fork: `git push -u origin my-awesome-feature`
-6. Submit a **Pull Request** so that we can review your changes.
-
-> **NOTE**: Be sure to merge the latest from "upstream" before making a pull request!
+##生产阶段运行
+>lx-pages build
 
 ## License
 
-[MIT](LICENSE) &copy; [李徐安](https://www.4399.com)
+[MIT](LICENSE) &copy; [李徐安](https://www.jianshu.com/u/a5418700ca16)
 
 
-
-[actions-img]: https://img.shields.io/github/workflow/status/ /lx-pages/CI
-[actions-url]: https://github.com/ /lx-pages/actions
-[codecov-img]: https://img.shields.io/codecov/c/github/ /lx-pages
-[codecov-url]: https://codecov.io/gh/ /lx-pages
-[license-img]: https://img.shields.io/github/license/ /lx-pages
-[license-url]: https://github.com/ /lx-pages/blob/master/LICENSE
-[downloads-img]: https://img.shields.io/npm/dm/lx-pages
-[downloads-url]: https://npm.im/lx-pages
-[version-img]: https://img.shields.io/npm/v/lx-pages
-[version-url]: https://npm.im/lx-pages
-[dependency-img]: https://img.shields.io/david/ /lx-pages
-[dependency-url]: https://david-dm.org/ /lx-pages
-[devdependency-img]: https://img.shields.io/david/dev/ /lx-pages
-[devdependency-url]: https://david-dm.org/ /lx-pages?type=dev
-[style-img]: https://img.shields.io/badge/code_style-standard-brightgreen
-[style-url]: https://standardjs.com
