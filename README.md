@@ -27,9 +27,9 @@ module.exports = {
     dist : 'dist', //输出路径
     temp : '.temp', //临时路径,可不做修改
     public : 'public', //静态资源，打包后复制在dist目录
-    paths : { //各个src下的文件存放路径-结合自己项目修改
-      styles : 'csss/**',
-     scripts : 'js/*.js',
+    paths : { //src下的各个文件存放路径-结合自己项目修改
+      styles : 'css/**',
+      scripts : 'js/*.js',
       pages : '*.html',
       images : 'images/*.{jpg,jpeg,png,gif,svg}',
       fonts : 'fonts/**'
@@ -52,6 +52,12 @@ module.exports = {
 ## 生产阶段运行
 >npm build
 
+## 5. 注意点
+html中引入的less文件，需要改成css结尾，避免build后找不到样式文件。
+```
+    <!--<link rel="stylesheet/less" href="css/index.less">-->
+    <link rel="stylesheet" href="css/index.css">
+```
 ## github
 https://github.com/XuanLee/lx-pages
 ## gitee
