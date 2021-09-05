@@ -4,7 +4,7 @@
   "description": "static web app workflow",
   "keywords": [
     "lx-pages",
-    "zce"
+    "gulp"
   ],
   "repository": " /lx-pages",
   "license": "MIT",

@@ -47,10 +47,10 @@ module.exports = {
 
 ## 4. 开发阶段运行
 
->npm serve  
+>npm run serve  
 
 ## 生产阶段运行
->npm build
+>npm run build
 
 ## 5. 注意点
 html中引入的less文件，需要改成css结尾，避免build后找不到样式文件。
